@@ -184,9 +184,10 @@ function(https) {
 	  		*/
 	  		console.log('ENTRO');
 	  		var email_new='test@prueba.com';
-			var apiKey='5a978f1422e3e5f33d95767d2db1eb84-us14';
-			var listid='22187567de';
-			var URL = 'https://us14.api.mailchimp.com/3.0/lists/'+listid+'/members/';
+			var apiKey='API_KEY';
+            var dataCenter = apiKey.substring(apiKey.indexOf('-')+1);
+			var listid='LIST_ID';
+			var URL= 'http://' + dataCenter + '.api.mailchimp.com/3.0/lists/'+ listid + '/members/';
 	  		
 	  		var jsonVar = [{
 				"email_address": email_new,
@@ -208,7 +209,7 @@ function(https) {
 
 			try{
 				 var response  =   
-                    https.post({
+                    https.put({
                         url: URL,
                         body: data,
                         headers: header
