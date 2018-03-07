@@ -155,33 +155,7 @@ function(https) {
      */
     function saveRecord(scriptContext) {
 
-        /*   var email_new='test@prueba.com';
-			var apiKey='5a978f1422e3e5f33d95767d2db1eb84-us14';
-			//var listid='5e5fed528b';
-			var listid='22187567de';
-
-			//var memberID= 'dbbe120e50c23e1001ced9069b5d27b5';
-			var dataCenter = apiKey.substring(apiKey.indexOf('-')+1);
-			var URL= 'http://' + dataCenter + '.api.mailchimp.com/3.0/lists/'+ listid + '/members/';
-		 	//var URL = 'https://us14.api.mailchimp.com/3.0/';
-
-			var jsonVar = [{
-				"email_address": email_new,
-				"status":"subscribed",
-				"merge_fields": [{"FNAME":"ESAU","LNAME":"OCROS"}]
-			}];
-
-			var data = JSON.stringify(jsonVar);
-
-		  
-		      var headers = [{
-		       "Authorization":"Basic 5a978f1422e3e5f33d95767d2db1eb84-us14",
-		       "Content-Type" :"application/json"
-		        }];
-			var header= JSON.stringify(headers);
-		        var response = nlapiRequestURL(URL, data, header,'POST');
-			console.log(response);
-	  		*/
+        
 	  		console.log('ENTRO');
 	  		var email_new='test@prueba.com';
 			var apiKey='API_KEY';
